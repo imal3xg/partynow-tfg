@@ -24,7 +24,7 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 - ☁️ **Sincronización en la nube**: disponible en versión web (Ionic Angular) con datos unificados mediante Firebase.
 - 🧪 **Diseño iterativo**: prototipado inicial en Balsamiq y refinamiento visual y funcional en Figma.
 
-> 🔍 **Toda la documentación técnica y justificación del proyecto está disponible en el [Anteproyecto completo]()**
+> 🔍 **Toda la documentación técnica y justificación del proyecto está disponible en el [Anteproyecto completo](https://www.notion.so/PartyNow-ANTEPROYECTO-1eb73c3c9fd480298e92e76e79ee7f7d?pvs=4)**
 
 ---
 
@@ -64,7 +64,7 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 ### 🎨 Diseño de la interfaz
 
 - 🖼️ **Prototipo en Balsamiq (solo visualización)**  
-  []()
+  [Enlace a Balsamiq](https://balsamiq.cloud/soqlapt/pkyu81e)
 
 - 📁 **Archivos descargables de Balsamiq (Google Drive)**  
   *(Pendiente de añadir enlace)*
