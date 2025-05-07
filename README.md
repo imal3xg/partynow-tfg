@@ -70,7 +70,7 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
   *(Pendiente de añadir enlace)*
 
 - 🎯 **Diseño en Figma (modo solo visualización)**  
-  []()
+  [Enlace a Figma](https://www.figma.com/design/rtPK2IWOK2aN3XO6yANVgy/PartyNow?node-id=0-1&t=2jouy5WntWORWcpY-1)
 
 - 🛠️ **Diseño en Figma (modo edición)**  
   []()
