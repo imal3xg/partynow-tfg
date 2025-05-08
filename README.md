@@ -81,7 +81,7 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 
 - 📥 **Power BI + CSV (descarga desde Drive)**  
   Incluye el archivo `.pbix` y los CSV exportados desde la app.  
-  *(Pendiente de añadir enlace)*
+  [Enlace a Google Drive](https://drive.google.com/drive/folders/127X1JsERo1u3Pd9Nz3DxdUlcQyUu0sof?usp=drive_link)
 
 ---
 
