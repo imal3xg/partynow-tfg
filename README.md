@@ -5,7 +5,7 @@
 ---
 
 ## 🎥 Video Checkpoint (5 minutos)  
-🔗 [Ver en YouTube]()  
+🔗 [Ver en Google Drive](https://drive.google.com/file/d/1WsWjC1H0qFYxM1rsJDdkgAKe8u8m9PDN/view?usp=sharing)  
 Resumen del estado actual del proyecto con una demostración práctica. En el video se exponen los principales avances, funcionalidades implementadas y cómo se cumplen los requisitos de prácticamente todas las asignaturas del ciclo.
 
 ---
