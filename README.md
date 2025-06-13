@@ -49,6 +49,9 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 - 📱 **Repositorio (Kotlin)**  
   [https://github.com/imal3xg/partynowadd](https://github.com/imal3xg/partynowadd)
 
+-  **Apk para Android de la App (Kotlin)**
+  [Descargar desde Google Drive](https://drive.google.com/file/d/15D4T2pEKSP_tZS9M9z7icb2ZBN778KWd/view?usp=drive_link)
+
 - 🎥 **Video Manual Detallado (Kotlin)**  
   [Ver video]()
 
@@ -71,9 +74,6 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 
 - 🎯 **Diseño en Figma (modo solo visualización)**  
   [Enlace a Figma](https://www.figma.com/design/rtPK2IWOK2aN3XO6yANVgy/PartyNow?node-id=0-1&t=2jouy5WntWORWcpY-1)
-
-- 🛠️ **Diseño en Figma (modo edición)**  
-  []()
 
 ---
 
