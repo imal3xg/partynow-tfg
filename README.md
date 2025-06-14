@@ -20,11 +20,173 @@ Contiene documentación histórica, bibliografía y enlaces complementarios.
 
 PartyNow es una aplicación integral, moderna y responsiva, diseñada para descubrir, organizar y gestionar fiestas a nivel mundial. Ofrece una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar eventos, gestionar perfiles y conectar en tiempo real. La app se ha desarrollado utilizando Ionic Framework y Angular, implementando prácticas avanzadas como arquitectura en capas, componentes reutilizables y formularios reactivos, junto con una integración completa con Firebase.
 
+**Funcionalidad Principal**
+La funcionalidad de PartyNow se resume en:
+
 - 📲 **Gestión de usuarios y fiestas**: permite registrar, editar y buscar usuarios a nivel de personas o de empresas, y buscar, crear, editar y eliminar fiestas.
-- ☁️ **Sincronización en la nube**: disponible en versión web (Ionic Angular) con datos unificados mediante Firebase.
+- 👤 **Actualización de perfil en tiempo real**: los usuarios verán los cambios que se produzcan en la web y en la app en tiempo real.
+- 👥 **Buscador de usuarios**: los usuarios podrán buscar a personas y empresas, y tienen la posibilidad de ver sus fiestas y celebraciones publicadas.
+- ☁️ **Sincronización en la nube completa**: disponible en versión web (Ionic Angular) y android (Kotlin Native) con datos unificados mediante Firebase.
 - 🧪 **Diseño iterativo**: prototipado inicial en Balsamiq y refinamiento visual y funcional en Figma.
 
 > 🔍 **Toda la documentación técnica y justificación del proyecto está disponible en el [Anteproyecto completo](https://www.notion.so/PartyNow-ANTEPROYECTO-1eb73c3c9fd480298e92e76e79ee7f7d?pvs=4)**
+
+---
+
+## **🎯Objetivos del proyecto**
+
+PartNow busca conectar personas de cualquier parte del mundo para hacer que pasen un rato increíble mediante esta red social, donde los usuarios pueden filtrar las fiestas por país, y ponerse en contacto con el creador de la fiesta para saber más información, ya sean personas o empresas. Para ello, se plantean los siguientes objetivos:
+
+| **Objetivo** | **Beneficio** |
+| --- | --- |
+| **Simplificar gestión** | Registro simplificado de personas y fiestas |
+| **Autologin** | Facilidad de entrar a la web y a la app de Android sin tener que volver a iniciar sesión |
+| **Multiplataforma** | Acceso desde cualquier dispositivo |
+| **Reconocimiento internacional** | Personas de cualquier país del mundo puede acceder a la app |
+| **Disponible en varios idiomas** | Los usuarios pueden elegir entre varios lenguajes para una mejor navegación |
+
+---
+
+## 💻 Tecnologías Utilizadas
+
+### 🌐 Frontend Web  
+- **Angular 18** – Framework principal de desarrollo frontend.
+- **Ionic Framework 8** – Librería UI para aplicaciones móviles/web con componentes nativos.
+- **Capacitor 6** – Plataforma para conectar funcionalidades nativas (como cámara, geolocalización, hápticos).
+  - Plugins usados:
+    - `@capacitor/camera` – acceso a la cámara.
+    - `@capacitor/geolocation` – ubicación GPS.
+    - `@capacitor/haptics` – vibración nativa.
+    - `@capacitor/keyboard` y `@capacitor/status-bar` – personalización visual.
+- **@ngx-translate/core + http-loader** – Soporte de traducción para múltiples idiomas.
+- **Firebase (vía SDK JS)** – Autenticación, Firestore, y almacenamiento.
+- **Axios** – Cliente HTTP ligero para comunicación con APIs externas.
+- **Lottie + ngx-lottie** – Animaciones vectoriales en tiempo real.
+- **Ionicons 7** – Conjunto de iconos modernos integrados con Ionic.
+- **dotenv** – Gestión de variables de entorno en tiempo de desarrollo.
+- **OpenAI SDK** – (opcional) SDK de interacción con modelos de IA si se utiliza.
+- **RxJS** – Programación reactiva para flujos de datos.
+- **Zone.js** – Integración con el detector de cambios de Angular.
+
+
+### 📱 Aplicación Móvil (Android - Kotlin)
+- **Android SDK 35 / Kotlin / ViewBinding / Parcelize**
+- **Hilt (DI)** – Inyección de dependencias moderna para Android.  
+- **Room** – Base de datos local persistente.  
+- **WorkManager** – Tareas en segundo plano.  
+- **Firebase (Auth, Firestore, Storage, Analytics)** – Backend completo en la nube.  
+- **Google Maps** – Integración de mapas.  
+- **Retrofit + GSON + OkHttp** – Cliente HTTP eficiente para servicios REST.  
+- **Glide** – Carga de imágenes eficiente.  
+- **CameraX** – Control avanzado de cámara nativa.  
+- **CircleImageView** – Avatares e imágenes redondas.  
+- **Lifecycle & ViewModel + Coroutines** – Gestión reactiva y asincronía moderna.  
+- **Network monitoring** – Detección de conectividad y reconexión.
+- **Doxygen** - Documentación del proyecto de Android.
+
+### ☁️ Backend  
+- **Firebase 11**  
+  - **Firestore** – Base de datos NoSQL en tiempo real.  
+  - **Auth** – Autenticación de usuarios.  
+  - **Hosting** – Despliegue de la app web.  
+  - **Storage** – Gestión de imágenes y recursos multimedia.  
+
+### 🧪 Testing y Calidad  
+- **Jasmine + Karma** – Testing unitario en frontend.  
+- **ESLint + Angular ESLint** – Linting y buenas prácticas de estilo.  
+- **Compodoc** – Generador de documentación automática del proyecto Angular.  
+
+
+### 📊 Análisis de Datos  
+- **Python + Firebase** – Script para extraer datos desde Firestore a CSV. 
+- **Exportación de datos (CSV)** – Los datos de la aplicación (p. ej. información de usuarios y fiestas) se exportaron desde Firebase a archivos CSV para su posterior análisis.  
+- **Microsoft Power BI** – Herramienta de inteligencia de negocios utilizada para analizar los datos exportados y crear visualizaciones e informes interactivos que apoyan la toma de decisiones y la evaluación del proyecto.
+
+---
+
+## 🛡️ Esquema E/R de la Base de Datos
+
+El modelo de datos de **PartyNow** está basado en una estructura de colecciones de Firebase Firestore y sigue un diseño E/R simple pero efectivo.
+
+Cada entidad **Person** (usuario) puede representar tanto a una **persona** como a una **empresa**. Estas entidades están relacionadas con múltiples **Party** (fiestas), lo que configura una relación de **uno a muchos**.
+
+### 🧩 Relación principal
+
+> Cada usuario (persona o empresa) puede crear múltiples fiestas, lo que se refleja en la relación:  
+> `Person (id)` 🔗 1 — N 🔗 `Party (personId)`
+
+Esta arquitectura facilita:
+- Consultas por usuario para obtener todas sus fiestas.
+- Referencias inversas de cada fiesta hacia su creador.
+
+---
+
+## 🗃️ Colecciones principales
+
+1. **Usuarios Persona** – Extensión del perfil de Firebase Auth para usuarios individuales.
+2. **Usuarios Empresa** – Extensión del perfil para entidades organizadoras (empresas).
+3. **Fiestas** – Eventos registrados por cualquier tipo de usuario.
+
+---
+
+### 👤 Usuario a nivel Persona
+
+| Campo         | Tipo             | Descripción                     | Ejemplo                                      |
+|---------------|------------------|----------------------------------|----------------------------------------------|
+| `id`          | string            | ID del documento                 | `"V4uBmDZlaU09XFEIvrBe"`                      |
+| `name`        | string            | Nombre                           | `"Alejandro"`                                 |
+| `surname`     | string            | Apellidos                        | `"Giráldez Guerrero"`                         |
+| `email`       | string            | Correo electrónico               | `"alexgg888999@gmail.com"`                    |
+| `phone`       | string            | Número de teléfono               | `"644493197"`                                 |
+| `birthday`    | string (fecha)    | Fecha de nacimiento              | `"20/04/2004"`                                |
+| `country`     | string            | País del usuario                 | `"Spain"`                                     |
+| `gender`      | string            | Género                           | `"male"`                                      |
+| `type`        | string            | Tipo de usuario                  | `"person"`                                    |
+| `image`       | string (URL)      | URL de imagen de perfil          | `"https://..."`                               |
+| `user`        | string            | UID de Firebase Auth             | `"4fIHj6INZrRqzbr5owQ3oRhto3m2"`              |
+
+---
+
+### 🏢 Usuario a nivel Empresa
+
+| Campo         | Tipo             | Descripción                     | Ejemplo                                      |
+|---------------|------------------|----------------------------------|----------------------------------------------|
+| `id`          | string            | ID del documento                 | `"fMd4iJqoVBY226BoacAi"`                      |
+| `name`        | string            | Nombre de la empresa             | `"Alan Turing"`                               |
+| `email`       | string            | Email de contacto                | `"alanturing@gmail.com"`                      |
+| `phone`       | string            | Teléfono                         | `"680993322"`                                 |
+| `location`    | string            | Ubicación                        | `"Spain"`                                     |
+| `type`        | string            | Tipo de usuario                  | `"company"`                                   |
+| `image`       | string (URL)      | Imagen                           | `"https://..."`                               |
+| `user`        | string            | UID de Firebase Auth             | `"4fIHj6INZrRqzbr5owQ3oRhto3m2"`              |
+
+---
+
+### 🎉 Fiestas
+
+| Campo         | Tipo             | Descripción                     | Ejemplo                                      |
+|---------------|------------------|----------------------------------|----------------------------------------------|
+| `id`          | string            | ID de la fiesta                  | `"8RDvsz5wo7P6uFt4kp8m"`                      |
+| `name`        | string            | Nombre del evento                | `"FAN FUTURA"`                                |
+| `country`     | string            | País                             | `"Spain"`                                     |
+| `city`        | string            | Ciudad o dirección               | `"C. P.º del Gonio Los Alcázares, Murcia"`    |
+| `price`       | number            | Precio de la entrada             | `65`                                          |
+| `minAge`      | string            | Edad mínima requerida            | `16`                                          |
+| `startDate`   | string (ISODate)  | Fecha y hora de inicio           | `"2025-07-17T17:00:00"`                       |
+| `finishDate`  | string (ISODate)  | Fecha y hora de fin              | `"2025-07-20T06:00:00"`                       |
+| `description` | string            | Descripción                      | `""`                                          |
+| `personId`    | string            | ID del usuario creador           | `"V4uBmDZlaU09XFEIvrBe"`                      |
+
+---
+
+### 🔗 Relaciones exactas
+
+- `person.user` → UID en Firebase Auth  
+- `company.user` → UID en Firebase Auth  
+- `party.personId` → `person.id` (o `company.id`)  
+
+> Esta estructura flexible permite consultar todos los eventos organizados por un usuario, identificar su tipo (persona o empresa), y mantener sincronización con el sistema de autenticación de Firebase.
+
 
 ---
 
@@ -34,6 +196,9 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 
 - 🔗 **Demo en Netlify**  
   [https://partynow.netlify.app](https://partynow.netlify.app/)
+
+- 🔗 **Apk para Android de la App web (Angular + Ionic)**
+  [Descargar desde Google Drive](https://drive.google.com/file/d/15D4T2pEKSP_tZS9M9z7icb2ZBN778KWd/view?usp=drive_link)
 
 - 💻 **Repositorio (Ionic + Angular)**  
   [https://github.com/imal3xg/partynow](https://github.com/imal3xg/partynow)
@@ -49,7 +214,7 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 - 📱 **Repositorio (Kotlin)**  
   [https://github.com/imal3xg/partynowadd](https://github.com/imal3xg/partynowadd)
 
--  **Apk para Android de la App (Kotlin)**
+- 🔗 **Apk para Android de la App (Kotlin)**
   [Descargar desde Google Drive](https://drive.google.com/file/d/15D4T2pEKSP_tZS9M9z7icb2ZBN778KWd/view?usp=drive_link)
 
 - 🎥 **Video Manual Detallado (Kotlin)**  
@@ -61,6 +226,16 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 
 - 🐍 **API en Python para generar CSV a partir de datos de Firebase**  
   [https://github.com/imal3xg/partynow-csv](https://github.com/imal3xg/partynow-csv)
+
+⚠️ Nota importante sobre Render (plan gratuito)
+
+Render, al estar en su modalidad gratuita, pone las aplicaciones en estado de suspensión cuando no reciben tráfico durante un tiempo.  
+Esto significa que:
+
+- La **primera solicitud después de un rato inactivo puede tardar entre 20 y 30 segundos** en responder (Render "despierta" la instancia).
+- Las siguientes solicitudes funcionarán con normalidad.
+
+Se recomienda tener paciencia al hacer la primera llamada si la API ha estado inactiva por un tiempo.
 
 ---
 
@@ -90,6 +265,6 @@ PartyNow es una aplicación integral, moderna y responsiva, diseñada para descu
 **Alejandro Giráldez Guerrero**  
 *Estudiante de 2º Desarrollo de Aplicaciones Multiplataforma*
 
-🏛️ CPIFP Alan Turing
+🏛️ **Centro docente** CPIFP Alan Turing
 ✉️ **Contacto:** alexgg888999@gmail.com  
 💻 **GitHub:** [imal3xg](https://github.com/imal3xg)
