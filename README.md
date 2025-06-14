@@ -11,7 +11,7 @@ Resumen del estado actual del proyecto con una demostración práctica. En el vi
 ---
 
 ## 📚 Historial de cambios y bibliografía  
-📁 [Acceder a Google Drive]()
+📁 [Acceder a Google Drive](https://drive.google.com/file/d/1n59Z1qHDvO0Hrddkcm_o-8w25rjPoBzs/view?usp=drive_link)
 Contiene documentación histórica, bibliografía y enlaces complementarios.
 
 ---
@@ -21,6 +21,7 @@ Contiene documentación histórica, bibliografía y enlaces complementarios.
 PartyNow es una aplicación integral, moderna y responsiva, diseñada para descubrir, organizar y gestionar fiestas a nivel mundial. Ofrece una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar eventos, gestionar perfiles y conectar en tiempo real. La app se ha desarrollado utilizando Ionic Framework y Angular, implementando prácticas avanzadas como arquitectura en capas, componentes reutilizables y formularios reactivos, junto con una integración completa con Firebase.
 
 **Funcionalidad Principal**
+
 La funcionalidad de PartyNow se resume en:
 
 - 📲 **Gestión de usuarios y fiestas**: permite registrar, editar y buscar usuarios a nivel de personas o de empresas, y buscar, crear, editar y eliminar fiestas.
@@ -194,17 +195,18 @@ Esta arquitectura facilita:
 
 ### 🌍 Aplicación Web
 
+- 💻 **Repositorio (Ionic + Angular)**  
+  [https://github.com/imal3xg/partynow](https://github.com/imal3xg/partynow)
+
 - 🔗 **Demo en Netlify**  
   [https://partynow.netlify.app](https://partynow.netlify.app/)
 
 - 🔗 **Apk para Android de la App web (Angular + Ionic)**
-  [Descargar desde Google Drive](https://drive.google.com/file/d/15D4T2pEKSP_tZS9M9z7icb2ZBN778KWd/view?usp=drive_link)
-
-- 💻 **Repositorio (Ionic + Angular)**  
-  [https://github.com/imal3xg/partynow](https://github.com/imal3xg/partynow)
+  [Descargar desde Google Drive](https://drive.google.com/file/d/1eXm6TIs-E5u7i6rdIIGJPPiTJbJWxjRW/view?usp=drive_link)
 
 - 🎥 **Video Manual Detallado (Ionic + Angular)**  
   [Ver video](https://drive.google.com/file/d/1nZW0Gk5TOxnkq9OVdCxdF5hrzCG-3DKa/view?pli=1)
+
   [Ver video sobre la responsividad](https://drive.google.com/file/d/1VYgMvTqAa9fwqXPFVuFfLEioJCa-DISh/view)
 
 ---
@@ -257,6 +259,50 @@ Se recomienda tener paciencia al hacer la primera llamada si la API ha estado in
 - 📥 **Power BI + CSV (descarga desde Drive)**  
   Incluye el archivo `.pbix` y los CSV exportados desde la app.  
   [Enlace a Google Drive](https://drive.google.com/drive/folders/127X1JsERo1u3Pd9Nz3DxdUlcQyUu0sof?usp=drive_link)
+
+---
+
+## ✨ Características Principales
+
+### ✍️ Registro y Perfiles  
+**Regístrate** como persona o como empresa.  
+**Perfiles Completos:** Cada perfil muestra tu foto, nombre (o nombre de la empresa), apellidos, género, fecha de nacimiento y el número de publicaciones (eventos creados).  
+**Edita tu Perfil:** Modifica tu foto, nombre, apellidos, género y fecha de nacimiento. Si eres una empresa, también puedes actualizar tu ubicación (país, dirección o ciudad).  
+
+### 🔑 Inicio de Sesión Continuo  
+**Autologin:** Disfruta de una experiencia sin interrupciones. Una vez que inicies sesión, la aplicación recordará tus credenciales para futuras visitas, tanto en la web como en la app móvil.  
+
+### 🎉 Gestión de Eventos (Fiestas)  
+**Descubre Fiestas:** Explora y visualiza eventos y celebraciones en todo el mundo, con la opción de filtrarlos por país.  
+**Crea tus Eventos:** Organiza y publica tus propias fiestas, celebraciones o eventos.  
+**Edita y Elimina:** Tienes control total para modificar o borrar los eventos que hayas creado.  
+
+### 👥 Conecta con Otros Usuarios  
+**Busca Usuarios:** Encuentra fácilmente a otras personas o empresas dentro de la red.  
+**Visita Perfiles:** Accede a los perfiles de otros usuarios para ver sus publicaciones y obtener más información.  
+**Contacta Directamente:** Comunícate con otros usuarios por correo electrónico o llamada telefónica desde la aplicación.  
+
+### 🌐 Soporte Multilingüe  
+**Aplicación Web:** Cambia el idioma directamente entre español e inglés.  
+**Aplicación Móvil (Android):** Disponible en español, inglés, francés, alemán e italiano. Para cambiar el idioma, deberás modificar la configuración de idioma de tu dispositivo.  
+
+### 👑 Panel de Administración  
+**Acceso Exclusivo:** Si eres administrador, un menú lateral te dará acceso a una sección especial.  
+**Gestiona Permisos:** Otorga o retira permisos de administrador a otros usuarios.  
+**Control de Cuentas:** Elimina cuentas de usuario, lo que también borrará todos los eventos asociados a esa cuenta.  
+
+### 🏠 Portada y "Acerca de Mí"  
+La página principal de la aplicación también funciona como una sección **"Acerca de"**, donde encontrarás información sobre el desarrollador y enlaces a mi **GitHub, LinkedIn y correo electrónico**.
+
+## 🛠️ Detalles Técnicos por Plataforma
+
+### 🌍 Aplicación Web (Ionic + Angular)  
+**IA Generativa para Descripciones:** Al crear o editar una fiesta, tienes la opción de generar una descripción con Inteligencia Artificial. Un botón específico enviará un prompt a un modelo de IA (como ChatGPT) para obtener sugerencias, haciendo que tus eventos sean más atractivos y modernos.  
+
+### 📱 Aplicación Móvil (Kotlin)  
+**Temas Claro y Oscuro:** La aplicación ofrece un diseño con temas claro y oscuro completamente contrastados para una experiencia visual personalizable.  
+**Notificaciones de Creación de Fiesta:** Al momento de crear una fiesta, se envía una notificación directa al dispositivo del usuario (gestionada con NotificationManager) para confirmar la creación. Pulsando en la notificación, se redirige al usuario automáticamente a los detalles de la fiesta creada.  
+**Modo Offline Robusto:** Gracias a la integración de **Room** para almacenamiento local y **WorkManager** para la gestión de tareas en segundo plano, la aplicación funciona eficazmente incluso en modo avión. Puedes visualizar las fiestas y perfiles cargados la última vez que tuviste conexión. Además, es posible **crear, modificar y eliminar fiestas**, aunque los cambios no se sincronizarán con Firebase ni serán visibles para otros usuarios hasta que se restablezca la conexión a internet.
 
 ---
 
