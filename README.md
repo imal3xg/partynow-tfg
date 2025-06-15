@@ -217,7 +217,7 @@ Esta arquitectura facilita:
   [https://github.com/imal3xg/partynowadd](https://github.com/imal3xg/partynowadd)
 
 - 🔗 **Apk para Android de la App (Kotlin)**
-  [Descargar desde Google Drive](https://drive.google.com/file/d/15D4T2pEKSP_tZS9M9z7icb2ZBN778KWd/view?usp=drive_link)
+  [Descargar desde Google Drive](https://drive.google.com/file/d/1urQUuNzWyq-ti8IWMqCVWdchmzt_nDj5/view?usp=drive_link)
 
 - 🎥 **Video Manual Detallado (Kotlin)**  
   [Ver video]()
