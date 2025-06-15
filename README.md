@@ -262,6 +262,20 @@ Se recomienda tener paciencia al hacer la primera llamada si la API ha estado in
 
 ---
 
+# 🖥️ Presentación del Proyecto
+
+## 📄 PDF de la Presentación
+El PDF de la presentación está disponible en el repositorio del proyecto, junto al `README.md`.
+
+## 🎥 Versión Recomendada con Vídeos y Transiciones
+Se recomienda visualizar la presentación interactiva en Canva para una mejor experiencia, con vídeos incluidos:
+
+- [Ver presentación en Canva](https://www.canva.com/design/DAGqccqNtGw/dOBe0oM2ltTMgXWDtQQ-dA/edit?utm_content=DAGqccqNtGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+> Contiene todos los vídeos y animaciones que enriquecen la experiencia.
+
+---
+
 ## ✨ Características Principales
 
 ### ✍️ Registro y Perfiles  
