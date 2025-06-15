@@ -205,7 +205,7 @@ Esta arquitectura facilita:
   [Descargar desde Google Drive](https://drive.google.com/file/d/1eXm6TIs-E5u7i6rdIIGJPPiTJbJWxjRW/view?usp=drive_link)
 
 - 🎥 **Video Manual Detallado (Ionic + Angular)**  
-  [Ver video](https://drive.google.com/file/d/1nZW0Gk5TOxnkq9OVdCxdF5hrzCG-3DKa/view?pli=1)
+  [Ver video](https://drive.google.com/file/d/1AS94PbPWDWve4Fw9Mq2cV_x49TWESoJB/view?usp=drive_link)
 
   [Ver video sobre la responsividad](https://drive.google.com/file/d/1VYgMvTqAa9fwqXPFVuFfLEioJCa-DISh/view)
 
