@@ -298,6 +298,7 @@ La página principal de la aplicación también funciona como una sección **"Ac
 
 ### 🌍 Aplicación Web (Ionic + Angular)  
 **IA Generativa para Descripciones:** Al crear o editar una fiesta, tienes la opción de generar una descripción con Inteligencia Artificial. Un botón específico enviará un prompt a un modelo de IA (como ChatGPT) para obtener sugerencias, haciendo que tus eventos sean más atractivos y modernos.  
+**Opción de compartir fiestas:** Tanto desde la página principal, como en el perfil de cada usuario (incluyendo el del usuario conectado) se podrá compartir fiestas por distintos navegadores en formato texto, incluyendo el nombre de la fiesta, los detalles, la descripción, y un enlace a la web. Dependiendo del idioma en el que esté la web en el momento de compartir, se enviarán los detalles en ese lenguaje.
 
 ### 📱 Aplicación Móvil (Kotlin)  
 **Temas Claro y Oscuro:** La aplicación ofrece un diseño con temas claro y oscuro completamente contrastados para una experiencia visual personalizable.  
