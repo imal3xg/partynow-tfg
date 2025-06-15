@@ -247,10 +247,10 @@ Se recomienda tener paciencia al hacer la primera llamada si la API ha estado in
   [Enlace a Balsamiq](https://balsamiq.cloud/soqlapt/pkyu81e)
 
 - 📁 **Archivos descargables de Balsamiq (Google Drive)**  
-  *(Pendiente de añadir enlace)*
+  [Enlafe a Google Drive](https://drive.google.com/drive/folders/1Kujc-XIfwvdJHCBXHMALyN4b1bIbfGtj?usp=drive_link)
 
 - 🎯 **Diseño en Figma (modo solo visualización)**  
-  [Enlace a Figma](https://www.figma.com/design/rtPK2IWOK2aN3XO6yANVgy/PartyNow?node-id=0-1&t=2jouy5WntWORWcpY-1)
+  [Enlace a Figma](https://www.figma.com/design/rtPK2IWOK2aN3XO6yANVgy/PartyNow?node-id=0-1&t=hswUmFDALXAt5xCC-1)
 
 ---
 
