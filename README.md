@@ -219,8 +219,8 @@ Esta arquitectura facilita:
 - 🔗 **Apk para Android de la App (Kotlin)**
   [Descargar desde Google Drive](https://drive.google.com/file/d/1urQUuNzWyq-ti8IWMqCVWdchmzt_nDj5/view?usp=drive_link)
 
-- 🎥 **Video Manual Detallado (Kotlin)**  
-  [Ver video]()
+- 🎥 **Video Manual Detallado (Kotlin)**
+  [Ver video](https://drive.google.com/file/d/1jN6-MPFFnWEbdQBaTnwuiAdLWGkf1grn/view?usp=drive_link)
 
 ---
 
