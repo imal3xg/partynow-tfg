@@ -1,4 +1,4 @@
-# 👑 PartNow - TFG DAM
+# 👑 PartyNow - TFG DAM
 
 **Red Social y Gestión de Fiestas** | *Proyecto fin de grado - CPIFP Alan Turing*
 
@@ -263,6 +263,9 @@ Se recomienda tener paciencia al hacer la primera llamada si la API ha estado in
 ---
 
 # 🖥️ Presentación del Proyecto
+
+## 🎥 Vídeo del Proyecto
+Se adjunta aquí el enlace al vídeo de la presentación, aunque se expondrá de forma oral haciendo uso de la presentación en PDF adjunta arriba junto al `README.md`. [Enlace al video](https://drive.google.com/file/d/1TMvftN1fPvzVuE8PSCm-60RrNZWzt7ZO/view?usp=drive_link)
 
 ## 📄 PDF de la Presentación
 El PDF de la presentación está disponible en el repositorio del proyecto, junto al `README.md`.
